@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Angela's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <h1>Angela Yu's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-  <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-  <img src="./assets/images/birthday-invite.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-</body>
+  <div id = 'header'>
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" alt="logo" class = 'logo'>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Web Development</p>
+        <h1>Hi, I'm <span>Yonas</span> <br>Baysasaw From Ethiopia</h1> 
+      </div>
+      
+    </div> 
+  </div> 
+  <!-- --------------------------about me------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"> About me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscig elit. sed nulla nibn,
+              tincidunt sit amet sapien quis, elementum mollis tellus, Pellentesque habitant 
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend
+              maga nisl, nec ultricies nunc. Nullam in magna nec odio tincidunt aliquam.
 
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-link">Skills</p>
+              <p class="tab-link">Experience</p>
+              <p class="tab-link">Education</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
 </html>
