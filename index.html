@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 </head>
 <body>
   <div id = 'header'>
@@ -18,10 +19,13 @@
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
       </nav>
+
+
       <div class="header-text">
         <p>Full Stack Web Development</p>
         <h1>Hi, I'm <span>Yonas</span> <br>Baysasaw From Ethiopia</h1> 
       </div>
+
       
     </div> 
   </div> 
@@ -46,7 +50,7 @@
               <p class="tab-links" onclick="opentab('experience')">Experience</p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-link"id = "skills" >
+            <div class="tab-contents active-tab"id = "skills" >
               <ul>
                 <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                 <li><span>Web Development</span><br>Web app Development</li>
@@ -59,19 +63,99 @@
               </ul>
             </div>
              
-            </div>
+            
             <div class="tab-contents" id="education">
               <ul>
                 <li><span>Student</span><br>A software Enginer at Addis Ababa</li>
               </ul>
             </div>
           </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------services-------------------------------- -->
+     <div id="services">
+      <div class="container">
+        <h1 class="sub-title">MyServices</h1>
+        <div class="services-list">
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscig elit. sed nulla nibn,
+              tincidunt sit amet sapien quis, elementum mollis tellus, Pellentesque habitant 
+              morbi tristique sen</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscig elit. sed nulla nibn,
+              tincidunt sit amet sapien quis, elementum mollis tellus, Pellentesque habitant 
+              morbi tristique sen</p>
+            <a href="#">learn more</a>
+          </div>
+           
+          
+          <div>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscig elit. sed nulla nibn,
+              tincidunt sit amet sapien quis, elementum mollis tellus, Pellentesque habitant 
+              morbi tristique sen</p>
+            <a href="#">learn more</a>
+          </div>
+            
+
+        </div>
+      </div>
+     </div>
+
+
+     <!-- ----------------------------------------portfolio----------------------------------- -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="Work">
+        <img src="images/work-1.png">
+        <div class = "layer">
+          <h3>Social Media App</h3>
+          <p>The app connects you yo the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="Work">
+        <img src="images/work-2.png">
+        <div class = "layer">
+          <h3>Music App</h3>
+          <p>The app connects you yo the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="Work">
+        <img src="images/work-3.png">
+        <div class = "layer">
+          <h3>Online Shopping App</h3>
+          <p>The app connects you yo the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
         </div>
       </div>
     </div>
+
+<a href="#" class="btn">See More</a>
+
+  </div>
+</div>
+
+
 <script>
   var tablinks = document.getElementsByClassName('tab-links');
-  var tabcontents = document.getElementsByClassName('tab-content');
+  var tabcontents = document.getElementsByClassName('tab-contents');
   function opentab(tabname){
     for(tablink of tablinks){
       tablink.classList.remove('active-link');
@@ -79,6 +163,9 @@
     for(tabcontent of tabcontents){
       tabcontent.classList.remove('active-tab');
     }
+    event.currentTarget.classList.add('active-link');
+    document.getElementById(tabname).classList.add('active-tab');
+
   }
 </script>
 </body>
